@@ -5,6 +5,19 @@
   --muted: #b7c2de;
   --accent: #cdd9ff;
   --border: rgba(255, 255, 255, 0.12);
+  --toggle-bg: #2b3558;
+  --toggle-thumb: #ffffff;
+}
+
+[data-theme="light"] {
+  --bg: #f6f8fc;
+  --panel: #ffffff;
+  --text: #172033;
+  --muted: #55627a;
+  --accent: #2f5bd3;
+  --border: rgba(15, 23, 42, 0.12);
+  --toggle-bg: #cfd8ee;
+  --toggle-thumb: #ffffff;
 }
 
 * {
@@ -17,6 +30,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
 a {
@@ -41,6 +55,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
 }
 
 .brand {
@@ -58,6 +78,7 @@ a {
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
+  transition: background 0.25s ease, border-color 0.25s ease;
 }
 
 .grid {
@@ -82,4 +103,45 @@ a {
 
 p {
   color: var(--muted);
+}
+
+.theme-toggle {
+  margin-left: 16px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.toggle-track {
+  width: 52px;
+  height: 30px;
+  background: var(--toggle-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  position: relative;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.toggle-thumb {
+  width: 22px;
+  height: 22px;
+  background: var(--toggle-thumb);
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: transform 0.25s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="light"] .toggle-thumb {
+  transform: translateX(22px);
+}
+
+.theme-toggle:focus-visible .toggle-track {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
