@@ -158,3 +158,32 @@ p {
 [data-theme="light"] .toggle-thumb {
   transform: translateX(16px);
 }
+
+.gallery {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-top: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-item {
+  min-width: 260px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.gallery-item p {
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
