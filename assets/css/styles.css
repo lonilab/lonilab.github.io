@@ -68,6 +68,12 @@ a {
   align-items: center;
 }
 
+nav a.active {
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 2px;
+}
+
 .brand {
   display: flex;
   align-items: left;
