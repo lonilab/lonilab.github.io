@@ -71,7 +71,7 @@ a {
 .brand {
   display: flex;
   align-items: left;
-  gap: 10px;
+  gap: 1px;
   font-weight: bold;
   font-size: 1.1rem;
 }
