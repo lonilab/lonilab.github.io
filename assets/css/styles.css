@@ -64,10 +64,18 @@ a {
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
+.logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
 .hero {
   padding: 48px 0 24px;
 }
