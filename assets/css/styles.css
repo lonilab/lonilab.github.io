@@ -65,17 +65,18 @@ a {
 
 .brand {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 10px;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
 .logo {
-  width: 28px;
-  height: 28px;
+  height: 44px;
+  width: auto;
   object-fit: contain;
 }
+
 .hero {
   padding: 48px 0 24px;
 }
