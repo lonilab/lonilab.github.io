@@ -107,6 +107,13 @@ nav a.active {
   align-items: center;
 }
 
+.center-page .card {
+  margin-bottom: 0;
+  max-width: 420px;
+  text-align: center;
+}
+
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
