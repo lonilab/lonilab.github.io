@@ -72,9 +72,8 @@ a {
 }
 
 .sidebar-logo img {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
+  width: 72px;
+  height: auto;
 }
 
 .lab-name {
