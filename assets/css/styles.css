@@ -27,7 +27,7 @@ a {
 .page-layout {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr) 280px;
+  grid-template-columns: 320px minmax(0, 1fr) 280px;
   grid-template-rows: 1fr auto;
   grid-template-areas:
     "left main right"
