@@ -63,11 +63,18 @@ a {
 
 .sidebar-block {
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .sidebar-logo {
   display: flex;
   justify-content: center;
+}
+
+.sidebar-logo img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
 }
 
 .lab-name {
