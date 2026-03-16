@@ -61,12 +61,16 @@ a {
   background: var(--panel);
 }
 
+.sidebar-block {
+  text-align: center;
+}
+
 .sidebar-logo {
-  width: 72px;
-  height: 72px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   display: block;
-  margin-bottom: 0 auto 12px auto;
+  margin: 0 auto 12px auto;
 }
 
 .lab-name {
@@ -75,7 +79,7 @@ a {
 }
 
 .lab-subtitle {
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   color: var(--muted);
   line-height: 1.5;
 }
