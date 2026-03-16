@@ -254,3 +254,27 @@ p {
   height: auto;
   margin-bottom: 12px;
 }
+
+.social-section {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  opacity: 0.85;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
