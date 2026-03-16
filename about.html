@@ -81,19 +81,19 @@
       <h2>People</h2>
 
       <h3>Team</h3>
-      <div class="people-grid">
-        <article class="person-card">
-          <img src="assets/img/pi.jpg" alt="Principal Investigator" class="person-photo" />
-          <div class="person-info">
-            <h4>Ting-Yat Wong</h4>
-            <p class="person-role">Principal Investigator</p>
-            <p>
-              Research interests include developmental neuroscience,
-              neuroinformatics, early-life adversity, and mental health risk.
-            </p>
-            <p><a href="mailto:wtingyat@eduhk.hk">wtingyat@eduhk.hk</a></p>
-          </div>
-        </article>
+        <div class="people-grid">
+          {% for person in site.data.people.team %}
+          <article class="person-card">
+            <img src="{{ person.photo }}" alt="{{ person.alt }}" class="person-photo" />
+            <div class="person-info">
+                <h4>{{ person.name }}</h4>
+                <p class="person-role">{{ person.role }}</p>
+                <p>{{ person.description }}</p>
+                <p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
 
         <article class="person-card">
           <img src="assets/img/researchstaff1.jpg" alt="Research Staff" class="person-photo" />
@@ -128,7 +128,7 @@
               while experience in neuroimaging analysis is desirable but not 
               required. Interested applicants are welcome to send a CV and 
               brief statement of research interests to 
-              <p>{{ site.pi_email }}</p>.
+              <a href="mailto:{{ site.pi_email }}">{{ site.pi_email }}</a>.
             </p>
           </div>
         </article>
