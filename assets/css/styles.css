@@ -244,3 +244,13 @@ p {
     text-align: center;
   }
 }
+
+.hero-about {
+  text-align: center;
+}
+
+.about-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 12px;
+}
