@@ -201,3 +201,46 @@ p {
   margin-top: 6px;
   font-size: 0.9rem;
 }
+
+.people-grid {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.person-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.person-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.person-info h4 {
+  margin: 0 0 4px 0;
+}
+
+.person-role {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .person-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
