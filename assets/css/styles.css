@@ -69,11 +69,12 @@ a {
 .sidebar-logo {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.sidebar-logo > img {
-  width: 200px;
-  height: auto;
+.sidebar-logo img {
+  width: 250px !important;
+  height: 250px !important;
 }
 
 .lab-name {
