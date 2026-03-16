@@ -71,7 +71,7 @@ a {
   justify-content: center;
 }
 
-.sidebar-logo img {
+.sidebar-logo > img {
   width: 72px;
   height: auto;
 }
