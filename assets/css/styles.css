@@ -82,16 +82,11 @@ a {
   font-size: 1.8rem;
 }
 
-.lab-subtitle {
-  margin: 0 0 40px 0;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
+  margin: 32px 0;
 }
 
 .sidebar-nav a {
