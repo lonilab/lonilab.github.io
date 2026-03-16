@@ -1,0 +1,21 @@
+team:
+  - name: Ting-Yat Wong
+    role: Principal Investigator
+    photo: assets/img/tywong.jpg
+    alt: Principal Investigator
+    description: Research interests include developmental neuroscience, neuroinformatics, early-life adversity, and mental health risk.
+    email: wtingyat@eduhk.hk
+  - name: Jie Xiao
+    role: Research Assistant
+    photo: assets/img/jxiao.jpg
+    alt: Research Assistant
+    description: TBC
+    email: TBC
+
+students:
+  - name: Firstname Lastname
+    role: PhD Student
+    photo: assets/img/student1.jpg
+    alt: PhD Student
+    description: Works on developmental neuroscience, neuroimaging, and computational modelling.
+    email: student1@university.edu
