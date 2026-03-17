@@ -90,9 +90,7 @@
           <div class="updates-list">
             {% for item in updates limit:5 %}
               <div class="update-item">
-                <p class="update-date">
-                  <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                </p>
+                <p class="update-date">{{ item.date | date: "%b %d, %Y" }}</p>
                 {% endif %}
               </div>
             {% endfor %}
