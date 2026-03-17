@@ -228,7 +228,7 @@ a {
 
 .sns-links a {
   color: var(--muted);
-  font-size: 30px;
+  font-size: 24px;
   transition: color 0.2s ease;
   opacity: 0.4;
 }
@@ -239,7 +239,7 @@ a {
 }
 
 .sns-title {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
