@@ -42,6 +42,10 @@
       "footer";
   }
 
+  .left-sidebar {
+    display: none;
+  }
+
   .mobile-header {
     display: block;
     grid-area: header;
