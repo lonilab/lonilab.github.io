@@ -95,22 +95,10 @@
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="current_year"></span> LoNI. Some rights reserved.</p>
+      <p>&copy; 2023-<span id="current_year"></span> LoNI. Some rights reserved.</p>
     </footer>
 
   </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    console.log("script loaded");
-    const yearEl = document.getElementById("current_year");
-    if (yearEl) {
-      yearEl.textContent = new Date().getFullYear();
-    } else {
-      console.log("current_year not found");
-    }
-  });
-</script>
-
+  
 </body>
 </html>
