@@ -1,4 +1,10 @@
-pi_email: wtingyat@eduhk.hk
-lab_email: lab@email.edu
 lab_full_name: Laboratory of Neurodevelopmental Informatics
 lab_short_name: The LoNI Lab
+lab_description: >
+  The Laboratory of Neurodevelopmental Informatics (LoNI) is dedicated to 
+  understanding how environmental exposures shape brain maturation through
+  computational and data-driven approaches. Our research investigates how these 
+  processes influence risk for mental health problems across development. We 
+  aim to advance early detection of developmental risk, inform preventive 
+  strategies, and support targeted interventions that promote healthier 
+  developmental outcomes.
