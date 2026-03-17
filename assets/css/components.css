@@ -1,0 +1,77 @@
+/* container */
+.updates {
+  margin-top: 48px;
+  padding: 24px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+
+  background: #fff;
+}
+
+/* title */
+.updates-title {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+}
+
+/* list */
+.updates-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* each item */
+.update-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.update-item:last-child {
+  border-bottom: none;
+}
+
+/* date */
+.update-date {
+  margin: 0;
+  font-size: 12px;
+  color: #888;
+}
+
+/* title */
+.update-title {
+  margin: 2px 0 0 0;
+  font-size: 14px;
+}
+
+.update-title a {
+  text-decoration: none;
+  color: #222;
+}
+
+.update-title a:hover {
+  text-decoration: underline;
+}
+
+/* button area */
+.updates-more {
+  margin-top: 16px;
+  text-align: right;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 13px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  text-decoration: none;
+  color: #333;
+}
+
+.btn:hover {
+  background: #f5f5f5;
+}

@@ -1,3 +1,7 @@
+collections:
+  updates:
+    output: true
+
 lab_full_name: Laboratory of Neurodevelopmental Informatics
 lab_short_name: The LoNI Lab
 lab_description: >
