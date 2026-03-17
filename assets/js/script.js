@@ -22,15 +22,12 @@ toggleButton.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const el = document.getElementById("current_year");
-  if (!el) return;
+  console.log("script loaded");
 
-  const startYear = 2024;
-  const currentYear = new Date().getFullYear();
-
-  if (currentYear > startYear) {
-    el.textContent = startYear + "–" + currentYear;
+  const yearEl = document.getElementById("current_year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
   } else {
-    el.textContent = startYear;
+    console.log("current_year not found");
   }
 });
