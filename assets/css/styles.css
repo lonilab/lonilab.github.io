@@ -228,9 +228,9 @@ a {
 
 .sns-links a {
   color: var(--muted);
-  font-size: 20px;
+  font-size: 30px;
   transition: color 0.2s ease;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .sns-links a:hover {
