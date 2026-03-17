@@ -21,4 +21,9 @@ toggleButton.addEventListener("click", () => {
   }
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
+(function () {
+  const el = document.getElementById("current_year");
+  if (el) {
+    el.textContent = new Date().getFullYear();
+  }
+})();
