@@ -21,9 +21,13 @@ toggleButton.addEventListener("click", () => {
   }
 });
 
-(function () {
-  const el = document.getElementById("current_year");
-  if (el) {
-    el.textContent = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("script loaded");
+
+  const yearEl = document.getElementById("current_year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  } else {
+    console.log("current_year not found");
   }
-})();
+});
