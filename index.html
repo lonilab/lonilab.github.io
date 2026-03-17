@@ -91,7 +91,6 @@
             {% for item in updates limit:5 %}
               <div class="update-item">
                 <p class="update-date">
-                  {{ item.date | date: "%b %d, %Y" }} — 
                   <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
                 </p>
                 {% endif %}
