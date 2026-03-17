@@ -213,3 +213,23 @@ a {
   background: var(--panel);
   color: var(--accent);
 }
+
+.sidebar-sns {
+  margin-top: 24px;
+}
+
+.sns-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.sns-links a {
+  color: var(--muted);
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.sns-links a:hover {
+  color: var(--text);
+}
