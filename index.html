@@ -4,102 +4,103 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LoNI | Home</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="assets/fonts/fontawesome-free-7.2.0-web/css/all.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoNI | Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-7.2.0-web/css/all.min.css">
+    <script src="assets/js/script.js" defer></script>
+  </head>
 
-<body>
+  <body>
 
-  <header class="mobile-header">
-    <div class="mobile-header-inner">
-      <a href="{{ '/' | relative_url }}" class="mobile-brand">
-        {{ site.lab_full_name }}
-      </a>
-      <button class="mobile-menu-button" type="button" aria-label="Open navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+    <header class="mobile-header">
+      <div class="mobile-header-inner">
+        <a href="{{ '/' | relative_url }}" class="mobile-brand">
+          {{ site.lab_full_name }}
+        </a>
+        <button class="mobile-menu-button" type="button" aria-label="Open navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="page-layout">
+
+      <aside class="left-sidebar">
+
+        <div class="sidebar-block">
+          <div class="sidebar-logo">
+            <img src="assets/img/logo.png" alt="logo">
+          </div>
+        </div>
+        
+        <div class="sidebar-block">
+          <h1 class="lab-name">{{ site.lab_short_name }}</h1>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="underconstruction.html">Research</a>
+          <a href="underconstruction.html">People</a>
+          <a href="underconstruction.html">News</a>
+          <a href="underconstruction.html">Contact</a>
+        </nav>
+
+        <div class="sidebar-block sidebar-sns">
+          <p class="sns-title">Follow us</p>
+          <div class="sns-links">
+            <a href="https://twitter.com/your_handle" target="_blank" aria-label="X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://github.com/your_repo" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/your_repo" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://github.com/your_repo" target="_blank" aria-label="Google Scholar">
+              <i class="fa-brands fa-google-scholar"></i>
+            </a>         
+          </div>
+        </div>
+
+      </aside>
+
+      <main class="main-content">
+        <section class="hero">
+
+          <h1>Welcome to Our Lab</h1>
+
+          <p>
+            The {{ site.lab_full_name }} (LoNI) is dedicated to understanding how 
+            environmental exposures shape brain maturation through computational 
+            and data-driven approaches. Our research investigates how these 
+            processes influence risk for mental health problems across 
+            development. We aim to advance early detection of developmental risk, 
+            inform preventive strategies, and support targeted interventions that 
+            promote healthier developmental outcomes.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Human Development</span>
+            <span class="tag">Neurodevelopment</span>
+            <span class="tag">MRI</span>
+            <span class="tag">Mental Health</span>
+          </div>
+
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2023-<span id="current_year"></span> LoNI. Some rights reserved.</p>
+      </footer>
+
     </div>
-  </header>
 
-  <div class="page-layout">
+    
 
-    <aside class="left-sidebar">
-
-      <div class="sidebar-block">
-        <div class="sidebar-logo">
-          <img src="assets/img/logo.png" alt="logo">
-        </div>
-      </div>
-      
-      <div class="sidebar-block">
-        <h1 class="lab-name">{{ site.lab_short_name }}</h1>
-      </div>
-
-      <nav class="sidebar-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="underconstruction.html">Research</a>
-        <a href="underconstruction.html">People</a>
-        <a href="underconstruction.html">News</a>
-        <a href="underconstruction.html">Contact</a>
-      </nav>
-
-      <div class="sidebar-block sidebar-sns">
-        <p class="sns-title">Follow us</p>
-        <div class="sns-links">
-          <a href="https://twitter.com/your_handle" target="_blank" aria-label="X">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="https://github.com/your_repo" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://github.com/your_repo" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://github.com/your_repo" target="_blank" aria-label="Google Scholar">
-            <i class="fa-brands fa-google-scholar"></i>
-          </a>         
-        </div>
-      </div>
-
-    </aside>
-
-    <main class="main-content">
-      <section class="hero">
-
-        <h1>Welcome to Our Lab</h1>
-
-        <p>
-          The {{ site.lab_full_name }} (LoNI) is dedicated to understanding how 
-          environmental exposures shape brain maturation through computational 
-          and data-driven approaches. Our research investigates how these 
-          processes influence risk for mental health problems across 
-          development. We aim to advance early detection of developmental risk, 
-          inform preventive strategies, and support targeted interventions that 
-          promote healthier developmental outcomes.
-        </p>
-
-        <div class="tags">
-          <span class="tag">Human Development</span>
-          <span class="tag">Neurodevelopment</span>
-          <span class="tag">MRI</span>
-          <span class="tag">Mental Health</span>
-        </div>
-
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>&copy; 2023-<span id="current_year"></span> LoNI. Some rights reserved.</p>
-    </footer>
-
-  </div>
-
-  <script src="assets/js/script.js"></script>
-
-</body>
+  </body>
 </html>
