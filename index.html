@@ -14,10 +14,12 @@
 </head>
 
 <body>
-  
+
   <header class="mobile-header">
     <div class="mobile-header-inner">
-      <a href="{{ '/' | relative_url }}" class="mobile-brand">LoNI</a>
+      <a href="{{ '/' | relative_url }}" class="mobile-brand">
+        {{ site.lab_full_name }}
+      </a>
       <button class="mobile-menu-button" type="button" aria-label="Open navigation">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -53,13 +55,15 @@
           <a href="https://twitter.com/your_handle" target="_blank" aria-label="X">
             <i class="fa-brands fa-x-twitter"></i>
           </a>
+          <a href="https://github.com/your_repo" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
           <a href="https://github.com/your_repo" target="_blank" aria-label="GitHub">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="https://github.com/your_repo" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          
+          <a href="https://github.com/your_repo" target="_blank" aria-label="Google Scholar">
+            <i class="fa-brands fa-google-scholar"></i>
+          </a>         
         </div>
       </div>
 
@@ -67,27 +71,28 @@
 
     <main class="main-content">
       <section class="hero">
+
         <h1>Welcome to Our Lab</h1>
+
         <p>
-          The {{ site.lab_full_name }} (LoNI) is dedicated
-          to understanding how early-life exposures shape brain maturation and 
-          developmental trajectories through computational and data-driven
-          approaches. Our work aims to inform early detection of developmental
-          risk, guide preventive strategies, and support targeted interventions
-          that promote healthier developmental outcomes.
+          The {{ site.lab_full_name }} (LoNI) is dedicated to understanding how 
+          environmental exposures shape brain maturation through computational 
+          and data-driven approaches. Our research investigates how these 
+          processes influence risk for mental health problems across 
+          development. We aim to advance early detection of developmental risk, 
+          inform preventive strategies, and support targeted interventions that 
+          promote healthier developmental outcomes.
         </p>
+
         <div class="tags">
           <span class="tag">Human Development</span>
           <span class="tag">Neurodevelopment</span>
           <span class="tag">MRI</span>
           <span class="tag">Mental Health</span>
         </div>
+
       </section>
     </main>
-   
-    <aside class="right-sidebar">
-
-    </aside>
 
     <footer class="site-footer">
       <p>&copy; <span id="current_year"></span> LoNI. Some rights reserved.</p>
@@ -95,6 +100,17 @@
 
   </div>
 
-</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("script loaded");
+    const yearEl = document.getElementById("current_year");
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    } else {
+      console.log("current_year not found");
+    }
+  });
+</script>
 
+</body>
 </html>
