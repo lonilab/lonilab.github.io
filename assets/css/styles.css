@@ -217,7 +217,7 @@ a {
 .sidebar-sns {
   margin-top: 24px;
   padding-top: 16px;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid var(--panel);
 }
 
 .sns-links {
@@ -239,10 +239,11 @@ a {
 }
 
 .sns-title {
-  font-size: 12px;
+  font-size: 18px;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 12px;
   text-align: center;
+  font-weight: bold;
 }
