@@ -30,13 +30,13 @@
 
 .update-date {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   color: #888;
 }
 
 .update-title {
   margin: 2px 0 0 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .update-title a {
@@ -57,7 +57,7 @@
 .more-button {
   display: inline-block;
   padding: 6px 12px;
-  font-size: 13px;
+  font-size: 16px;
 
   border: 1px solid #ccc;
   border-radius: 6px;
