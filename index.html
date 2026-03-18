@@ -85,10 +85,9 @@ title: Home
           <h1>Welcome to Our Lab</h1>
           <p>{{ site.lab_description }}</p>
           <div class="tags">
-            <span class="tag">Human Development</span>
-            <span class="tag">Neurodevelopment</span>
-            <span class="tag">MRI</span>
-            <span class="tag">Mental Health</span>
+            {% for tag in site.lab_tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
           </div>
         </section>
 
