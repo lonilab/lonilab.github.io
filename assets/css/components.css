@@ -1,4 +1,4 @@
-/* container */
+/* latest update container */
 .updates {
   margin-top: 48px;
   padding: 24px;
@@ -9,19 +9,16 @@
   background: #fff;
 }
 
-/* title */
 .updates-title {
   margin: 0 0 16px 0;
   font-size: 20px;
 }
 
-/* list */
 .updates-list {
   display: flex;
   flex-direction: column;
 }
 
-/* each item */
 .update-item {
   padding: 10px 0;
   border-bottom: 1px solid #f0f0f0;
@@ -31,17 +28,15 @@
   border-bottom: none;
 }
 
-/* date */
 .update-date {
   margin: 0;
-  font-size: 12px;
+  font-size: 18px;
   color: #888;
 }
 
-/* title */
 .update-title {
   margin: 2px 0 0 0;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .update-title a {
@@ -53,14 +48,13 @@
   text-decoration: underline;
 }
 
-/* button area */
 .updates-more {
   margin-top: 16px;
   text-align: right;
 }
 
 /* button */
-.btn {
+.more-button {
   display: inline-block;
   padding: 6px 12px;
   font-size: 13px;
@@ -72,6 +66,6 @@
   color: #333;
 }
 
-.btn:hover {
+.more-button:hover {
   background: #f5f5f5;
 }
