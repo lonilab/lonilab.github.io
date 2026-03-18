@@ -44,7 +44,7 @@ title: Home
         <nav class="sidebar-nav">
           <a href="index.html" class="active">Home</a>
           <a href="about.html">About</a>
-          <a href="underconstruction.html">Research</a>
+          <a href="research.html">Research</a>
           <a href="underconstruction.html">People</a>
           <a href="underconstruction.html">News</a>
           <a href="contact.html">Contact</a>
@@ -84,6 +84,7 @@ title: Home
         <section class="hero">
           <h1>Welcome to Our Lab</h1>
           <p>{{ site.lab_description }}</p>
+          <p>{{ page.url }}</p>
 
           <div class="tags">
             {% for tag in site.lab_tags %}
