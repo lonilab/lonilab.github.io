@@ -42,9 +42,15 @@
       <nav class="sidebar-nav">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/about.html' | relative_url }}">About</a>
-        <a href="{{ '/underconstruction.html' | relative_url }}">Research</a>
+        <a href="{{ '/research.html' | relative_url }}"
+            {% if page.url contains '/research' %}class="active"{% endif %}>
+            Research
+        </a>
         <a href="#">People</a>
-        <a href="{{ '/news.html' | relative_url }}">News</a>
+        <a href="{{ '/news.html' | relative_url }}"
+            {% if page.url contains '/news' %}class="active"{% endif %}>
+            News
+        </a>
         <a href="{{ '/contact.html' | relative_url }}">Contact</a>
       </nav>
     </aside>
