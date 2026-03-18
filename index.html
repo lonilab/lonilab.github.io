@@ -1,135 +1,37 @@
 ---
+layout: default
 title: Home
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<section class="hero">
+  <h1>Welcome to Our Lab</h1>
+  <p>{{ site.lab_description }}</p>
+  <div class="tags">
+    {% for tag in site.lab_tags %}
+    <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+</section>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-free-7.2.0-web/css/all.min.css">
-    <script src="assets/js/script.js" defer></script>
-  </head>
-
-  <body>
-
-    <header class="mobile-header">
-      <div class="mobile-header-inner">
-        <button class="mobile-menu-button" type="button" aria-label="Open navigation">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <a href="{{ '/' | relative_url }}" class="mobile-brand">
-          {{ site.lab_full_name }}
+<section class="card">
+  <h2 class="updates-title">Latest Updates</h2>
+  {% assign updates = site.updates | sort: "date" | reverse %}
+  <div class="updates-list">
+    {% for item in updates limit:5 %}
+    <div class="update-item">
+      <p>
+        <span class="update-date">{{ item.date | date: "%b %d, %Y" }}</span>:
+        <a href="{{ item.url | relative_url }}" class="update-title">
+          {{ item.title }}
         </a>
-      </div>
-    </header>
-
-    <div class="page-layout">
-
-      <aside class="left-sidebar">
-
-        <div class="sidebar-block">
-          <div class="sidebar-logo">
-            <img src="assets/img/logo.png" alt="logo">
-          </div>
-        </div>
-        
-        <div class="sidebar-block">
-          <h1 class="lab-name">{{ site.lab_short_name }}</h1>
-        </div>
-
-        <nav class="sidebar-nav">
-          <a href="index.html" class="active">Home</a>
-          <a href="about.html">About</a>
-          <a href="research.html">Research</a>
-          <a href="underconstruction.html">People</a>
-          <a href="underconstruction.html">News</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-
-        <div class="sidebar-block sidebar-sns">
-          <p class="sns-title">Follow us</p>
-          <div class="sns-links">
-            <a href="https://twitter.com/your_handle" target="_blank" aria-label="X">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="https://github.com/your_repo" target="_blank" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://github.com/your_repo" target="_blank" aria-label="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://github.com/your_repo" target="_blank" aria-label="Google Scholar">
-              <i class="fa-brands fa-google-scholar"></i>
-            </a>         
-          </div>
-        </div>
-
-      </aside>
-
-      <main class="main-content">
-        
-        <nav class="breadcrumb">
-          <a href="{{ '/' | relative_url }}">Home</a>
-
-          {% if page.title != "Home" %}
-            <span class="separator">›</span>
-            <span class="current">{{ page.title }}</span>
-          {% endif %}
-        </nav>
-
-        <section class="hero">
-          <h1>Welcome to Our Lab</h1>
-          <p>{{ site.lab_description }}</p>
-          <p>{{ page.url }}</p>
-
-          <div class="tags">
-            {% for tag in site.lab_tags %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-        </section>
-
-        <section class="card">
-          <h2 class="updates-title">Latest Updates</h2>
-
-          {% assign updates = site.updates | sort: "date" | reverse %}
-
-          <div class="updates-list">
-            {% for item in updates limit:5 %}
-              <div class="update-item">
-                <p>
-                  <span class="update-date">
-                    {{ item.date | date: "%b %d, %Y" }}
-                  </span>:
-                  <a href="{{ item.url | relative_url }}" class="update-title">
-                    {{ item.title }}
-                  </a>
-                </p>
-              </div>
-            {% endfor %}
-          </div>
-
-          <div class="updates-more">
-            <a href="{{ '/news.html' | relative_url }}" class="more-button">
-              Read more →
-            </a>
-          </div>
-        </section>
-
-
-
-      </main>
-
-      <footer class="site-footer">
-        <p>&copy; 2023-<span id="current_year"></span> LoNI. Some rights reserved.</p>
-      </footer>
-
+      </p>
     </div>
-
-  </body>
-
-</html>
+    {% endfor %}
+  </div>
+  
+  <div class="updates-more">
+    <a href="{{ '/news.html' | relative_url }}" class="more-button">
+      Read more →
+    </a>
+  </div>
+</section>
