@@ -39,9 +39,11 @@
   color: #222;
   text-decoration: none;
   margin-left: 4px;
+  transition: background-color 0.2s ease;
 }
 
 .update-title:hover {
+  background-color: rgba(0, 0, 0, 0.06);
   text-decoration: underline;
 }
 
