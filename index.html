@@ -91,6 +91,13 @@
             {% for item in updates limit:5 %}
               <div class="update-item">
                 <p class="update-date">{{ item.date | date: "%b %d, %Y" }}</p>
+                <p class="update-title">
+                  <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                </p>
+                {% if item.type %}
+                  <span class="update-type update-type-{{ item.type }}">
+                    {{ item.type }}
+                  </span>
                 {% endif %}
               </div>
             {% endfor %}
@@ -100,6 +107,8 @@
             <a href="{{ '/news.html' | relative_url }}" class="btn">Read more →</a>
           </div>
         </section>
+
+
 
       </main>
 
