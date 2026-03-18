@@ -94,11 +94,9 @@
                   <span class="update-date">
                     {{ item.date | date: "%b %d, %Y" }}
                   </span>:
-                  <span class="update-title">
-                    <a href="{{ item.url | relative_url }}">
-                      {{ item.title }}
-                    </span>
-                  </p>
+                  <a href="{{ item.url | relative_url }}" class="update-title">
+                    {{ item.title }}
+                  </a>
                 </p>
               </div>
             {% endfor %}
