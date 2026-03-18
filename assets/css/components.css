@@ -8,32 +8,26 @@
 
   background: #fff;
 }
-
 .updates-title {
   margin: 0 0 16px 0;
   font-size: 20px;
 }
-
 .updates-list {
   display: flex;
   flex-direction: column;
 }
-
 .update-item {
   padding: 1px 0;
   border-bottom: 1px solid #f0f0f0;
 }
-
 .update-item:last-child {
   border-bottom: none;
 }
-
 .update-date {
   margin: 0;
   font-size: 18px;
   color: #888;
 }
-
 .update-title {
   font-size: 18px;
   color: #222;
@@ -41,12 +35,10 @@
   margin-left: 4px;
   transition: background-color 0.2s ease;
 }
-
 .update-title:hover {
   background-color: rgba(0, 0, 0, 0.05);
   text-decoration: underline;
 }
-
 .updates-more {
   margin-top: 16px;
   text-align: right;
@@ -66,43 +58,39 @@
 }
 
 .more-button:hover {
-  background: #f5f5f5;
+  background: var(--bg);
 }
 
+/* breadcrumb */
 .breadcrumb {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
-
 .breadcrumb a {
   color: var(--muted);
   text-decoration: none;
 }
-
 .breadcrumb a:hover {
   text-decoration: underline;
 }
-
 .breadcrumb .separator {
   margin: 0 6px;
 }
-
 .breadcrumb .current {
   color: var(--text);
 }
 
-/* Tags */
+/* tags container */
 .tags {
   margin-top: 14px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-
 .tag {
   display: inline-block;
-  padding: 10px 10px;
+  padding: 6px 10px;
   font-size: 1rem;
   border-radius: 999px;
   border: 1px solid var(--border);
