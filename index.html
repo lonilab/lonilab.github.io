@@ -18,12 +18,12 @@ title: Home
 
     <header class="mobile-header">
       <div class="mobile-header-inner">
-        <a href="{{ '/' | relative_url }}" class="mobile-brand">
-          {{ site.lab_full_name }}
-        </a>
         <button class="mobile-menu-button" type="button" aria-label="Open navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
+        <a href="{{ '/' | relative_url }}" class="mobile-brand">
+          {{ site.lab_full_name }}
+        </a>
       </div>
     </header>
 
@@ -84,6 +84,7 @@ title: Home
         <section class="hero">
           <h1>Welcome to Our Lab</h1>
           <p>{{ site.lab_description }}</p>
+
           <div class="tags">
             {% for tag in site.lab_tags %}
               <span class="tag">{{ tag }}</span>
