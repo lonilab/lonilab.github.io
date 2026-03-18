@@ -40,19 +40,51 @@
       </div>
 
       <nav class="sidebar-nav">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/about.html' | relative_url }}">About</a>
+        <a href="{{ '/' | relative_url }}"
+           {% if page.url contains '/' %}class="active"{% endif %}
+        >
+          Home
+        </a>
+        <a href="{{ '/about.html' | relative_url }}"
+           {% if page.url contains '/about' %}class="active"{% endif %}
+        >
+          About
+        </a>
         <a href="{{ '/research.html' | relative_url }}"
-            {% if page.url contains '/research' %}class="active"{% endif %}>
-            Research
+           {% if page.url contains '/research' %}class="active"{% endif %}
+        >
+          Research
         </a>
-        <a href="#">People</a>
         <a href="{{ '/news.html' | relative_url }}"
-            {% if page.url contains '/news' %}class="active"{% endif %}>
-            News
+           {% if page.url contains '/news' %}class="active"{% endif %}
+        >
+          News
         </a>
-        <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+        <a href="{{ '/contact.html' | relative_url }}"
+           {% if page.url contains '/contact' %}class="active"{% endif %}
+        >
+          Contact
+        </a>
       </nav>
+
+      <div class="sidebar-block sidebar-sns">
+        <p class="sns-title">Follow us</p>
+        <div class="sns-links">
+          <a href="https://twitter.com/your_handle" target="_blank" aria-label="X">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://github.com/your_repo" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://github.com/your_repo" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://github.com/your_repo" target="_blank" aria-label="Google Scholar">
+            <i class="fa-brands fa-google-scholar"></i>
+          </a>         
+        </div>
+      </div>
+
     </aside>
 
     <main class="main-content">
