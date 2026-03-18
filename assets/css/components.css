@@ -35,16 +35,13 @@
 }
 
 .update-title {
-  margin: 2px 0 0 0;
   font-size: 18px;
-}
-
-.update-title a {
-  text-decoration: none;
   color: #222;
+  text-decoration: none;
+  margin-left: 4px;
 }
 
-.update-title a:hover {
+.update-title:hover {
   text-decoration: underline;
 }
 
