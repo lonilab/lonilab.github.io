@@ -10,8 +10,14 @@ lab_description: >
   computational and data-driven approaches. Our research investigates how these 
   processes influence risk for mental health problems across development. We 
   aim to advance early detection of developmental risk, inform preventive 
-  strategies, and support targeted interventions that promote healthier 
-  developmental outcomes.
+  strategies, and support personalized interventions that promote healthier 
+  development.
+lab_aim: >
+  We aim to advance understanding of human development and promote healthier 
+  developmental outcomes by integrating developmental science, neuroscience, 
+  and informatics. We seek to uncover the mechanisms of developmental risk and 
+  resilience across childhood and adolescence and translate this knowledge into 
+  earlier identification, prevention, and more personalized intervention.
 lab_tags:
   - Neurodevelopment
   - MRI

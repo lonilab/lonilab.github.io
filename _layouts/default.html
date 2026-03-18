@@ -1,0 +1,73 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoNI | {{ page.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/fonts/fontawesome-free-7.2.0-web/css/all.min.css' | relative_url }}">
+  <script src="{{ '/assets/js/script.js' | relative_url }}" defer></script>
+</head>
+
+<body>
+
+  <header class="mobile-header">
+    <div class="mobile-header-inner">
+      <button class="mobile-menu-button" type="button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="{{ '/' | relative_url }}" class="mobile-brand">
+        {{ site.lab_full_name }}
+      </a>
+    </div>
+  </header>
+
+  <div class="page-layout">
+
+    <aside class="left-sidebar">
+      <div class="sidebar-block">
+        <div class="sidebar-logo">
+          <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="logo">
+        </div>
+      </div>
+
+      <div class="sidebar-block">
+        <h1 class="lab-name">{{ site.lab_short_name }}</h1>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about.html' | relative_url }}">About</a>
+        <a href="{{ '/underconstruction.html' | relative_url }}">Research</a>
+        <a href="#">People</a>
+        <a href="{{ '/news.html' | relative_url }}">News</a>
+        <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <nav class="breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        {% if page.title != "Home" %}
+          <span class="separator">›</span>
+          <span class="current">{{ page.title }}</span>
+        {% endif %}
+      </nav>
+
+      {{ content }}
+
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2023-<span id="current_year"></span> LoNI. Some rights reserved.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

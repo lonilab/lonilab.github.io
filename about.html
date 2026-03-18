@@ -1,50 +1,110 @@
 ---
+title: About
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Laboratory of Neurodevelopmental Informatics</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
 
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <div class="brand">
-        <span>Laboratory of Neurodevelopmental Informatics</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoNI | Contact</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-7.2.0-web/css/all.min.css">
+    <script src="assets/js/script.js" defer></script>
+  </head>
+
+  <body>
+
+    <header class="mobile-header">
+      <div class="mobile-header-inner">
+        <a href="{{ '/' | relative_url }}" class="mobile-brand">
+          {{ site.lab_full_name }}
+        </a>
+        <button class="mobile-menu-button" type="button" aria-label="Open navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
+    </header>
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="underconstruction.html">Research</a>
-        <a href="underconstruction.html">News</a>
-        <a href="underconstruction.html">Contact</a>
-      </nav>
+    <div class="page-layout">
+
+      <aside class="left-sidebar">
+
+        <div class="sidebar-block">
+          <div class="sidebar-logo">
+            <img src="assets/img/logo.png" alt="logo">
+          </div>
+        </div>
+        
+        <div class="sidebar-block">
+          <h1 class="lab-name">{{ site.lab_short_name }}</h1>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="underconstruction.html">Research</a>
+          <a href="underconstruction.html">People</a>
+          <a href="underconstruction.html">News</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="sidebar-block sidebar-sns">
+          <p class="sns-title">Follow us</p>
+          <div class="sns-links">
+            <a href="https://twitter.com/your_handle" target="_blank" aria-label="X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://github.com/your_repo" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/your_repo" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://github.com/your_repo" target="_blank" aria-label="Google Scholar">
+              <i class="fa-brands fa-google-scholar"></i>
+            </a>         
+          </div>
+        </div>
+
+      </aside>
+
+      <main class="main-content">
+        
+        <nav class="breadcrumb">
+          <a href="{{ '/' | relative_url }}">Home</a>
+
+          {% if page.title != "Home" %}
+            <span class="separator">›</span>
+            <span class="current">{{ page.title }}</span>
+          {% endif %}
+        </nav>
+
+        <section class="hero hero-about">
+          <h1>About the Lab</h1>
+        </section>
+
+        <section class="card">
+          <h2>Our Aim</h2>
+          <p>{{ site.lab_aim }}</p>
+        </section>
+
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2023-<span id="current_year"></span> LoNI. Some rights reserved.</p>
+      </footer>
+
     </div>
-  </header>
+
+  </body>
+
+</html>
 
   <main class="container">
     
-    <section class="hero hero-about">
-      <h1>About the Lab</h1>
-    </section>
-
-    <section class="card">
-      <h2>Our Aim</h2>
-      <p>
-        We aim to advance understanding of human development and promote 
-        healthier developmental outcomes by integrating developmental science, 
-        neuroscience, and informatics. Through neuroimaging, longitudinal data, 
-        and computational methods, we seek to uncover the mechanisms of 
-        developmental risk and resilience across childhood and adolescence and 
-        translate this knowledge into earlier identification, prevention, and 
-        more targeted intervention.
-      </p>
-    </section>
+    
 
     <section class="card">
       <h2>What We Do</h2>
@@ -174,37 +234,5 @@
       </div>
     </section>
 
-    <section class="card social-section">
-      <h2>Follow Us</h2>
-      <div class="social-links">
-        <a href="https://twitter.com/yourlab" target="_blank">
-          <img src="assets/img/social/twitter.png" alt="Twitter">
-        </a>
-        
-        <a href="https://github.com/yourlab" target="_blank">
-          <img src="assets/img/social/github.png" alt="GitHub">
-        </a>
-        
-        <a href="https://scholar.google.com/" target="_blank">
-          <img src="assets/img/social/google-scholar.png" alt="Google Scholar">
-        </a>
-
-        <a href="https://linkedin.com/" target="_blank">
-          <img src="assets/img/social/linkedin.png" alt="LinkedIn">
-        </a>
-
-      </div>
-    </section>
 
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 LoNI</p>
-    </div>
-  </footer>
-
-  <script src="assets/js/script.js"></script>
-
-</body>
-</html>
