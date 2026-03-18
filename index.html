@@ -71,6 +71,15 @@
 
       <main class="main-content">
         
+        <nav class="breadcrumb">
+          <a href="{{ '/' | relative_url }}">Home</a>
+
+          {% if page.title != "Home" %}
+            <span class="separator">›</span>
+            <span class="current">{{ page.title }}</span>
+          {% endif %}
+        </nav>
+
         <section class="hero">
           <h1>Welcome to Our Lab</h1>
           <p>{{ site.lab_description }}</p>
@@ -100,10 +109,6 @@
                 </p>
               </div>
             {% endfor %}
-          </div>
-
-          <div>
-            <a class="update-title">Title</a>
           </div>
 
           <div class="updates-more">
