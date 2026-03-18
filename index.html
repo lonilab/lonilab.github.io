@@ -20,7 +20,7 @@ title: Home
     {% for item in updates limit:5 %}
     <div class="update-item">
       <p>
-        <span class="update-date">{{ item.date | date: "%b %d, %Y" }}</span>:
+        <span class="update-date">{{ item.date | date: "%d %b %Y:" }}</span>
         <a href="{{ item.url | relative_url }}" class="update-title">
           {{ item.title }}
         </a>
