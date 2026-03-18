@@ -90,15 +90,14 @@
           <div class="updates-list">
             {% for item in updates limit:5 %}
               <div class="update-item">
-                <p class="update-date">{{ item.date | date: "%b %d, %Y" }}</p>
-                <p class="update-title">
-                  <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                <p>
+                  <span class="update-date">
+                    {{ item.date | date: "%b %d, %Y" }}
+                  </span>:
+                  <a href="{{ item.url | relative_url }}" class="update-title">
+                    {{ item.title }}
+                  </a>
                 </p>
-                {% if item.type %}
-                  <span class="update-type update-type-{{ item.type }}">
-                    {{ item.type }}
-                  </span>
-                {% endif %}
               </div>
             {% endfor %}
           </div>
