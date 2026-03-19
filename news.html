@@ -3,29 +3,26 @@ layout: default
 title: News
 ---
 
-
 {% assign updates = site.updates | sort: "date" | reverse %}
 
 {% for item in updates %}
-  <div class="update-card">
-    <p>
-      <span class="update-date">{{ item.date | date: "%d %b %Y:" }}</span>
-      <a href="{{ item.url | relative_url }}" class="update-title">
-        {{ item.title }}
-      </a>
+<div class="update-card">
+  <p>
+    <span class="update-date">{{ item.date | date: "%d %b %Y:" }}</span>
+    <a href="{{ item.url | relative_url }}" class="update-title">
+      {{ item.title }}
+    </a>
+  </p>
+
+  {% if item.content %}
+    <p class="update-description">
+      {{ item.content
+        | markdownify
+        | strip_html
+        | strip_newlines
+        | truncate: 400
+      }}
     </p>
-
-    {% if item.content %}
-      <p class="update-description">
-        {{ item.content
-          | markdownify
-          | strip_html
-          | strip_newlines
-          | truncate: 180
-        }}
-      </p>
-    {% endif %}
-
-  </div>
-  {% endfor %}
+  {% endif %}
 </div>
+{% endfor %}
