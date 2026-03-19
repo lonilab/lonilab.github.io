@@ -6,6 +6,7 @@
   --muted: #55627a;
   --accent: #2f5bd3;
   --border: rgba(15, 23, 42, 0.12);
+  --separator: #ffffff;
 }
 
 * {

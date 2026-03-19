@@ -20,11 +20,11 @@
 
 .update-item {
   display: grid;
-  grid-template-columns: 80px 1fr;
-  column-gap: 12px;
+  grid-template-columns: 100px 1fr;
+  column-gap: 0px;
   align-items: baseline;
-  padding: 12px 0;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--separator);
 }
 
 .update-item:last-child {
