@@ -19,6 +19,10 @@
 }
 
 .update-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  column-gap: 12px;
+  align-items: baseline;
   padding: 1px 0;
   border-bottom: 1px solid #f0f0f0;
 }

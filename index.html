@@ -18,14 +18,14 @@ title: Home
   {% assign updates = site.updates | sort: "date" | reverse %}
   <div class="updates-list">
     {% for item in updates limit:5 %}
-    <div class="update-item">
-      <p>
-        <span class="update-date">{{ item.date | date: "%d %b %Y:" }}</span>
-        <a href="{{ item.url | relative_url }}" class="update-title">
-          {{ item.title }}
-        </a>
-      </p>
-    </div>
+      <div class="update-item">
+        <p>
+          <span class="update-date">{{ item.date | date: "%d %b %Y:" }}</span>
+          <a href="{{ item.url | relative_url }}" class="update-title">
+            {{ item.title }}
+          </a>
+        </p>
+      </div>
     {% endfor %}
   </div>
   
