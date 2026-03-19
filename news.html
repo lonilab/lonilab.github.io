@@ -5,6 +5,8 @@ title: News
 
 {% assign news = site.updates | sort: "date" | reverse %}
 <div class="news-list">
-    {% for item in news %}
+  {% for item in news %}
+  <div class="update-item">
     <span>{{ item.title }}</span>
+  </div>
 </div>
