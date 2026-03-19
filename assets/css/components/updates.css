@@ -53,21 +53,32 @@
   text-align: right;
 }
 
-.update-description {
-  margin: 4px 0 10px;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--text);
-}
-
 .update-card {
-  display: grid;
-  grid-template-columns: 88px minmax(0, 1fr);
-  gap: 22px;
-  align-items: start;
-
-  padding: 22px;
+  padding: 24px;
   border: 1px solid var(--border);
   background: var(--panel);
   border-radius: 16px;
+}
+
+.update-heading {
+  margin: 0 0 12px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  column-gap: 12px;
+  align-items: baseline;
+}
+
+.update-description {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.update-heading-title {
+  color: var(--text);
 }
