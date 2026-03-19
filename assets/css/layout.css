@@ -146,5 +146,5 @@
 
 .hero p {
   margin: 0;
-  font-size: var(--xl);
+  font-size: var(--fs-large);
 }
