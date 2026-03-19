@@ -10,7 +10,7 @@
 
 .updates-title {
   margin: 0 0 16px 0;
-  font-size: 18px;
+  font-size: var(--fs-xl);
 }
 
 .updates-list {
@@ -32,21 +32,22 @@
 }
 
 .update-date {
-  font-size: var(--fs-medium);
+  font-size: var(--fs-large);
   color: var(--muted);
   text-align: justify;
   white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
 }
 
 .update-title {
-  font-size: var(--fs-medium);
+  font-size: var(--fs-large);
   color: var(--text);
   text-decoration: none;
   transition: background-color 0.2s ease;
 }
 
 .update-title:hover {
-  background-color: rgba(0, 0, 0, 0.05);
   text-decoration: underline;
 }
 

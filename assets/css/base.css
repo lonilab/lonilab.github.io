@@ -14,9 +14,9 @@
   --accent: #2f5bd3;
   --border: rgba(15, 23, 42, 0.12);
   --separator: #3f3f3f;
-  --light-separator: #f6f8fc;
+  --light-separator: #e7e7e7;
   
-  --radius: 12px;
+  --radius: 12px; 
 
   /* text size */
   --fs-small: 0.875rem;   /* ~14px */
