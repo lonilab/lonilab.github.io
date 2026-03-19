@@ -32,14 +32,14 @@
 }
 
 .update-date {
-  font-size: 18px;
+  font-size: var(--fs-medium);
+  color: var(--muted);
   text-align: justify;
   white-space: nowrap;
-  color: var(--muted);
 }
 
 .update-title {
-  font-size: 18px;
+  font-size: var(--fs-medium);
   color: var(--text);
   text-decoration: none;
   transition: background-color 0.2s ease;
