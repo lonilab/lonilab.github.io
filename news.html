@@ -7,7 +7,7 @@ title: News
 {% assign updates = site.updates | sort: "date" | reverse %}
 
 {% for item in updates %}
-  <div class="card">
+  <div class="update-card">
     <p>
       <span class="update-date">{{ item.date | date: "%d %b %Y:" }}</span>
       <a href="{{ item.url | relative_url }}" class="update-title">
