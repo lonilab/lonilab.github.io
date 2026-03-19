@@ -1,16 +1,24 @@
 :root {
+  /* surfaces */
   --bg: #f6f8fc;
+  --header: #1C1C1C /* rgba(28, 28, 28, 0.1) */
   --panel: #ffffff;
   --sidebar: #eef1f5;
+
+
+   /* text */
   --text: #172033;
   --muted: #55627a;
+
+  /* accent */
   --accent: #2f5bd3;
   --border: rgba(15, 23, 42, 0.12);
   --separator: #f0f0f0;
-  --darkbg: #1C1C1C
+  
 
   --radius: 12px;
 
+  /* text size */
   --fs-small: 0.875rem;   /* ~14px */
   --fs-base: 1rem;        /* 16px */
   --fs-medium: 1.125rem;  /* ~18px */
