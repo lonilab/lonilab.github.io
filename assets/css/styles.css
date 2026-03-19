@@ -4,3 +4,6 @@
 @import url("./pages.css");
 @import url("./utilities.css");
 @import url("./components/people.css");
+@import url("./components/tags.css");
+@import url("./components/updates.css");
+@import url("./components/breadcrumb.css");
