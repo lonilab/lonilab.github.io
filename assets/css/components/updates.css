@@ -20,8 +20,8 @@
 
 .update-item {
   display: grid;
-  grid-template-columns: 100px 1fr;
-  column-gap: 0px;
+  grid-template-columns: 120px 1fr;
+  column-gap: 8px;
   align-items: baseline;
   padding: 6px 0;
   border-bottom: 1px solid var(--separator);
@@ -32,9 +32,8 @@
 }
 
 .update-date {
-  margin: 0;
   font-size: 18px;
-  text-align: justify;
+  text-align: right;
   white-space: nowrap;
   color: var(--muted);
 }
