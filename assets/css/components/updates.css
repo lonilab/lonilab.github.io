@@ -20,7 +20,8 @@
 
 .update-item {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 100px 1fr;
+  white-space: nowrap;
   column-gap: 0px;
   align-items: baseline;
   padding: 6px 0;
