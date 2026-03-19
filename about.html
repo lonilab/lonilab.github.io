@@ -22,7 +22,7 @@ title: About
           <div class="person-photo">
             <img
               src="{{ person.photo | relative_url }}"
-              alt="{{ person.alt | default: person.name }}"
+              alt="{{ person.name }}"
             >
           </div>
 
@@ -39,7 +39,7 @@ title: About
                 {% if person.email and person.email != "TBC" %}
                   <a href="mailto:{{ person.email }}">{{ person.email }}</a>
                 {% elsif person.email %}
-                  <span>{{ person.email }}</span>
+                  <span>email: {{ person.email }}</span>
                 {% endif %}
 
                 {% if person.email and person.website %}
@@ -47,7 +47,11 @@ title: About
                 {% endif %}
 
                 {% if person.website %}
-                  <a href="{{ person.website }}" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href="{{ person.website }}" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
                     Personal website
                   </a>
                 {% endif %}
