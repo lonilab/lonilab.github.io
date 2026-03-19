@@ -3,11 +3,12 @@ layout: default
 title: News
 ---
 
-<section class="card">
-  <h2 class="updates-title">Latest Updates</h2>
-  {% assign updates = site.updates | sort: "date" | reverse %}
+
+
+  {% assign news = site.updates | sort: "date" | reverse %}
+
   <div class="updates-list">
-    {% for item in updates limit:5 %}
+    {% for item in news %}
     <div class="update-item">
       <p>
         <span class="update-date">{{ item.date | date: "%d %b %Y:" }}</span>
@@ -24,4 +25,3 @@ title: News
       Read more →
     </a>
   </div>
-</section>
