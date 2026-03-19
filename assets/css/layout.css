@@ -5,6 +5,7 @@
   grid-template-columns: 320px minmax(0, 1fr);
   grid-template-rows: 1fr auto;
   grid-template-areas:
+    "header header"
     "left main"
     "footer footer";
 }
@@ -118,4 +119,20 @@
 .icon {
   font-size: 40px;
   margin-bottom: 12px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: transparent;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* when scrolled */
+.site-header.scrolled {
+  background: var(--darkbg);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(28, 28, 28, 0.1);
 }
