@@ -16,8 +16,17 @@
 .left-sidebar {
   grid-area: left;
   background: var(--sidebar);
+  color: var(--sidebar-text);
   border-right: 1px solid var(--border);
   padding: 28px 20px;
+}
+
+.left-sidebar a {
+  color: var(--sidebar-text);
+}
+
+.left-sidebar p {
+  color: var(--sidebar-muted);
 }
 
 .main-content {

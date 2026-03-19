@@ -2,12 +2,13 @@
   /* surfaces */
   --bg: #f6f8fc;
   --panel: #ffffff;
-  --sidebar: #1C1C1C;
+  --sidebar: #1c1c1c;
 
    /* text */
   --text: #172033;
-  --sidebar-text: #FCFAF2;
   --muted: #55627a;
+  --sidebar-text: #fcfaf2;
+  --sidebar-muted: #787878;
 
   /* accent */
   --accent: #2f5bd3;
@@ -84,39 +85,4 @@ a {
   color: var(--muted);
   line-height: 1.7;
   font-size: 1.2rem;
-}
-
-
-
-.sidebar-sns {
-  margin-top: 24px;
-  padding-top: 16px;
-  border-top: 1px solid var(--panel);
-}
-
-.sns-links {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-
-.sns-links a {
-  color: var(--muted);
-  font-size: 24px;
-  transition: color 0.2s ease;
-  opacity: 0.3;
-}
-
-.sns-links a:hover {
-  color: var(--text);
-  opacity: 1;
-}
-
-.sns-title {
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 12px;
-  text-align: center;
-  font-weight: bold;
 }
