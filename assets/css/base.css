@@ -59,7 +59,7 @@ a {
   flex-direction: column;
   gap: 2px;
   margin: 32px 0;
-  font-size: 18px;
+  font-size: var(--fs-medium);
 }
 
 .sidebar-nav a {
@@ -144,7 +144,6 @@ a {
 }
 
 .sns-title {
-  font-size: 15px;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
