@@ -1,0 +1,57 @@
+---
+layout: default
+title: People
+---
+
+{% for group in site.data.people %}
+<section class="people-section">
+  
+  <h2>{{ group[0] | replace: "_", " " | capitalize }}</h2>
+
+  <div class="people-list">
+    {% for person in group[1] %}
+      <article class="person-card">
+        <div class="person-photo">
+          <img
+            src="{{ person.photo | relative_url }}"
+            alt="{{ person.name }}"
+          >
+        </div>
+
+        <div class="person-info">
+          <h3>{{ person.name }}</h3>
+          <p class="person-role">{{ person.role }}</p>
+
+          {% if person.description %}
+            <p class="person-description">{{ person.description }}</p>
+          {% endif %}
+
+          {% if person.email or person.website %}
+            <div class="person-meta">
+              {% if person.email and person.email != "TBC" %}
+                <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+              {% elsif person.email %}
+                <span>email: {{ person.email }}</span>
+              {% endif %}
+
+              {% if person.email and person.website %}
+                <span class="person-sep">·</span>
+              {% endif %}
+
+              {% if person.website %}
+                <a 
+                  href="{{ person.website }}" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Personal website
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
