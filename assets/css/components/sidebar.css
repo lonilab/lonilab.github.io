@@ -30,7 +30,7 @@
 .sidebar-nav a {
   padding: 10px 12px;
   border-radius: 10px;
-  color: var(--sidebar-text);
+  color: var(--dark-muted);
   font-weight: 600;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .sns-title {
-  color: var(--sidebar-text);
+  color: var(--dark-text);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 12px;
@@ -62,13 +62,13 @@
 }
 
 .sns-links a {
-  color: var(--sidebar-muted);
+  color: var(--dark-muted);
   font-size: 24px;
   transition: color 0.2s ease;
   opacity: 0.5;
 }
 
 .sns-links a:hover {
-  color: var(--sidebar-text);
+  color: var(--dark-text);
   opacity: 1;
 }

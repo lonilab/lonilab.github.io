@@ -2,13 +2,13 @@
   /* surfaces */
   --bg: #f6f8fc;
   --panel: #ffffff;
-  --sidebar: #1c1c1c;
+  --dark-bg: #1c1c1c;
 
    /* text */
   --text: #1c1c1c;
   --muted: #55627a;
-  --sidebar-text: #fcfaf2;
-  --sidebar-muted: #787878;
+  --dark-text: #fcfaf2;
+  --dark-muted: #787878;
 
   /* accent */
   --accent: #2f5bd3;
@@ -41,6 +41,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+
 
 
 
