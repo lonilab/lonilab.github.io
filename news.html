@@ -2,3 +2,46 @@
 layout: default
 title: News
 ---
+
+{% assign news = site.udpates | sort: "date" | reverse %}
+
+<section class="news-section">
+  <div class="news-list" id="news-list">
+    {% for item in news %}
+      <article class="news-card">
+        <div class="news-card-top">
+          <div class="news-main">
+            <p class="news-date">{{ item.date | date: "%d %b %Y" }}</p>
+
+            <h3 class="news-title">
+              {% if item.url and item.url != "" %}
+                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% else %}
+                {{ item.title }}
+              {% endif %}
+            </h3>
+
+            {% if item.content %}
+              <div class="news-description">
+                {{ item.content | markdownify | strip_html | strip_newlines | truncate: 240 }}
+              </div>
+            {% endif %}
+          </div>
+
+          {% if item.type %}
+            <div class="news-tag-wrap">
+              <span class="news-tag">{{ item.type }}</span>
+            </div>
+          {% endif %}
+        </div>
+
+        {% if item.url and item.url != "" %}
+          <div class="news-actions">
+            <a class="news-button" href="{{ item.url | relative_url }}">Read more</a>
+          </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+
+</section>
