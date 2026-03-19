@@ -9,15 +9,15 @@ title: News
   <div class="updates-list">
     {% for item in updates %}
       <article class="update-card">
-        
-        <h3 class="update-heading">
-          <span class="update-date">
+
+        <h4 class="update-heading">
+          <span class="update-heading-title">
             {{ item.date | date: "%d %b %Y:" }}
           </span>
           <span class="update-heading-title">
             {{ item.title }}
           </span>
-        </h3>
+        </h4>
 
         {% if item.content %}
           <p class="update-description">
