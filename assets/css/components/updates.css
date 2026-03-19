@@ -34,7 +34,6 @@
 .update-date {
   font-size: var(--fs-large);
   color: var(--muted);
-  text-align: justify;
   white-space: nowrap;
   display: flex;
   justify-content: space-between;
