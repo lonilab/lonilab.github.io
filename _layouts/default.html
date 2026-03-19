@@ -59,6 +59,11 @@
           >
             Research
           </a>
+          <a href="{{ '/publications.html' | relative_url }}"
+            {% if page.url contains '/publications' %}class="active"{% endif %}
+          >
+            Publications
+          </a>
           <a href="{{ '/news.html' | relative_url }}"
             {% if page.url contains '/news' %}class="active"{% endif %}
           >
