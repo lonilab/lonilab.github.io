@@ -44,12 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
   renderPage(1);
 });
 
-const header = document.getElementById("site-header");
+document.querySelectorAll(".toggle-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".update-card");
+    card.classList.toggle("expanded");
 
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 20) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
+    btn.textContent = card.classList.contains("expanded")
+      ? "See less"
+      : "See more";
+  });
 });
+

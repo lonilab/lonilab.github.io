@@ -11,6 +11,10 @@
   padding: 16px 18px;
 }
 
+.news-card p{
+  font-size: var(--fs-large);
+}
+
 .news-heading {
   margin: 0 0 8px;
   display: flex;
@@ -33,4 +37,26 @@
   margin: 0;
   color: var(--text);
   line-height: 1.6;
+}
+
+.update-description.full {
+  display: none;
+}
+
+.update-card.expanded .update-description.short {
+  display: none;
+}
+
+.update-card.expanded .update-description.full {
+  display: block;
+}
+
+.toggle-btn {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0;
+  font-size: var(--fs-small);
 }
