@@ -3,12 +3,17 @@ layout: default
 title: News
 ---
 
-{% assign news = site.updates | sort: "date" | reverse %}
-<div class="news-list">
-  {% for item in news %}
+
+{% assign updates = site.updates | sort: "date" | reverse %}
+<div class="card">
+{% for item in updates %}
   <div class="update-item">
     <p>
-      <span>{{ item.title }}</span>
+      <span class="update-date">{{ item.date | date: "%d %b %Y:" }}</span>
+      <a href="{{ item.url | relative_url }}" class="update-title">
+        {{ item.title }}
+      </a>
     </p>
   </div>
+  {% endfor %}
 </div>
