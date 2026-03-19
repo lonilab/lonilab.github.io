@@ -99,7 +99,7 @@
 .card {
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--radius);
   padding: 20px 24px;
   text-align: justify;
 }
@@ -111,6 +111,7 @@
 
 .card p {
   margin: 0 0 12px 0;
+  font-size: var(--fs-large);
   line-height: 1.25;
 }
 
@@ -120,7 +121,6 @@
 
 .hero {
   margin-bottom: 24px;
-  line-height: 1.25;
   text-align: justify;
 }
 
@@ -132,6 +132,7 @@
 
 .hero p {
   margin: 0;
+  line-height: 1.25;
   font-size: var(--fs-large);
 }
 
