@@ -1,7 +1,7 @@
 :root {
   /* surfaces */
   --bg: #f6f8fc;
-  --panel: #ffffff;
+  --panel: #fcfaf2;
   --sidebar: #1c1c1c;
 
    /* text */
@@ -13,9 +13,8 @@
   /* accent */
   --accent: #2f5bd3;
   --border: rgba(15, 23, 42, 0.12);
-  --separator: #f0f0f0;
+  --separator: #fcfaf2;
   
-
   --radius: 12px;
 
   /* text size */

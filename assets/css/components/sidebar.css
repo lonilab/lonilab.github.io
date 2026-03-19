@@ -43,7 +43,7 @@
 .sidebar-sns {
   margin-top: 24px;
   padding-top: 16px;
-  border-top: 1px solid var(--panel);
+  border-top: 1px solid var(--separator);
 }
 
 .sns-links {
