@@ -24,7 +24,7 @@
   column-gap: 8px;
   align-items: baseline;
   padding: 6px 0;
-  border-bottom: 1px solid var(--separator);
+  border-bottom: 1px solid var(--light-separator);
 }
 
 .update-item:last-child {
