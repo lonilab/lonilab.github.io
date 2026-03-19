@@ -6,7 +6,15 @@
   --muted: #55627a;
   --accent: #2f5bd3;
   --border: rgba(15, 23, 42, 0.12);
-  --separator: #ffffff;
+  --separator: #f0f0f0;
+
+  --radius: 12px;
+
+  --fs-small: 0.875rem;   /* ~14px */
+  --fs-base: 1rem;        /* 16px */
+  --fs-medium: 1.125rem;  /* ~18px */
+  --fs-large: 1.25rem;    /* ~20px */
+  --fs-xl: 1.5rem;        /* ~24px */
 }
 
 * {
