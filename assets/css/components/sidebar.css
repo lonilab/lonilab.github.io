@@ -1,0 +1,41 @@
+.sidebar-block {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-logo img {
+  width: 220px !important;
+  height: 220px !important;
+}
+
+.lab-name {
+  margin: 0 0 6px 0;
+  font-size: var(--fs-xxl);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 32px 0;
+  font-size: var(--fs-medium);
+}
+
+.sidebar-nav a {
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.sidebar-nav a.active,
+.sidebar-nav a:hover {
+  background: #dfe6ef;
+  color: var(--text);
+}

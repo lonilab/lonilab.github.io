@@ -1,13 +1,12 @@
 :root {
   /* surfaces */
   --bg: #f6f8fc;
-  --header: #1C1C1C /* rgba(28, 28, 28, 0.1) */
   --panel: #ffffff;
-  --sidebar: #eef1f5;
-
+  --sidebar: #1C1C1C;
 
    /* text */
   --text: #172033;
+  --sidebar-text: #FCFAF2;
   --muted: #55627a;
 
   /* accent */
@@ -24,6 +23,7 @@
   --fs-medium: 1.125rem;  /* ~18px */
   --fs-large: 1.25rem;    /* ~20px */
   --fs-xl: 1.5rem;        /* ~24px */
+  --fs-xxl: 1.75rem;      /* ~28px */
 }
 
 * {
@@ -42,51 +42,11 @@ a {
   text-decoration: none;
 }
 
-.sidebar-block {
-  text-align: center;
-  margin-bottom: 24px;
-}
 
-.sidebar-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sidebar-logo img {
-  width: 220px !important;
-  height: 220px !important;
-}
-
-.lab-name {
-  margin: 0 0 6px 0;
-  font-size: 1.8rem;
-}
-
-.sidebar-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin: 32px 0;
-  font-size: var(--fs-medium);
-}
-
-.sidebar-nav a {
-  padding: 10px 12px;
-  border-radius: 10px;
-  color: var(--muted);
-  font-weight: 600;
-}
-
-.sidebar-nav a.active,
-.sidebar-nav a:hover {
-  background: #dfe6ef;
-  color: var(--text);
-}
 
 .content-card,
 .side-card {
-  background: var(--panel);
+  background: var(--sidebar);;
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 18px 20px;
