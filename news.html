@@ -14,6 +14,18 @@ title: News
         {{ item.title }}
       </a>
     </p>
+
+    {% if item.content %}
+      <p class="update-description">
+        {{ item.content
+          | markdownify
+          | strip_html
+          | strip_newlines
+          | truncate: 180
+        }}
+      </p>
+    {% endif %}
+
   </div>
   {% endfor %}
 </div>

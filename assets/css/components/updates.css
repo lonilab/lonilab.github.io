@@ -28,9 +28,11 @@
 }
 
 .update-date {
+  display: inline-block;
+  width: 120px; 
   margin: 0;
   font-size: 18px;
-  color: #888;
+  color: var(--muted);
 }
 
 .update-title {
@@ -49,4 +51,11 @@
 .updates-more {
   margin-top: 16px;
   text-align: right;
+}
+
+.update-description {
+  margin: 4px 0 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
 }
