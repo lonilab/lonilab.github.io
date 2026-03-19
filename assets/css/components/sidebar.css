@@ -46,6 +46,15 @@
   border-top: 1px solid var(--separator);
 }
 
+.sns-title {
+  color: var(--sidebar-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .sns-links {
   display: flex;
   justify-content: center;
@@ -62,13 +71,4 @@
 .sns-links a:hover {
   color: var(--sidebar-text);
   opacity: 1;
-}
-
-.sns-title {
-  color: var(--sidebar-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 12px;
-  text-align: center;
-  font-weight: bold;
 }
