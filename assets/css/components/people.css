@@ -1,0 +1,92 @@
+.person-card {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+
+  padding: 18px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 14px;
+}
+
+.person-photo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.person-photo img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.person-info h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.person-role {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.person-description {
+  margin: 0 0 12px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.person-meta {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.person-meta a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.person-meta a:hover {
+  border-bottom-color: currentColor;
+}
+
+.person-sep {
+  margin: 0 8px;
+  color: var(--muted);
+}
+
+/* spacing between cards */
+.people-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* section spacing */
+.people-section {
+  margin: 40px 0;
+}
+
+/* mobile */
+@media (max-width: 640px) {
+  .person-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .person-photo {
+    justify-content: center;
+  }
+
+  .person-info {
+    text-align: left;
+  }
+}

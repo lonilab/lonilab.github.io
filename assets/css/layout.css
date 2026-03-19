@@ -52,7 +52,7 @@
     grid-area: header;
     background: var(--panel);
     border-bottom: 1px solid var(--border);
-    padding: 14px 16px;
+    padding: 4px 12px;
   }
 
   .mobile-header-inner {
@@ -72,7 +72,7 @@
     background: transparent;
     color: var(--text);
     font-size: 1.25rem;
-    padding: 6px;
+    padding: 4px;
     cursor: pointer;
   }
 
