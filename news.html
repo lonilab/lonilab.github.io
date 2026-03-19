@@ -3,24 +3,23 @@ layout: default
 title: News
 ---
 
-{% assign updates = site.updates | sort: "date" | reverse %}
+{% assign news = site.updates | sort: "date" | reverse %}
 
-<section class="updates">
-  <div class="updates-list">
+<section class="news">
+  <div class="=news-list">
     {% for item in updates %}
-      <article class="update-card">
-
-        <h4 class="update-heading">
-          <span class="update-heading-title">
-            {{ item.date | date: "%d %b %Y:" }}
+      <article class="news-card">
+        <h4 class="news-heading">
+          <span class="news-date">
+            {{ item.date | date: "%d %b %Y" }}
           </span>
-          <span class="update-heading-title">
+          <span class="news-title">
             {{ item.title }}
           </span>
         </h4>
 
         {% if item.content %}
-          <p class="update-description">
+          <p class="news-description">
             {{ item.content
               | markdownify
               | strip_html
