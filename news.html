@@ -5,23 +5,23 @@ title: News
 
 {% assign news = site.updates | sort: "date" | reverse %}
 
-<section class="updates">
-  <div class="updates-list">
-    {% for item in updates %}
-      <article class="update-card">
+<section class="news">
+  <div class="news-list">
+    {% for item in news %}
+      <article class="news-card">
 
-        <h2 class="update-heading">
-          <span class="update-date">
+        <h2 class="news-heading">
+          <span class="news-date">
             {{ item.date | date: "%d %b %Y" }}
           </span>
-          <span class="update-title">
+          <span class="news-title">
             {{ item.title }}
           </span>
         </h2>
 
         {% if item.content %}
           <!-- truncated -->
-          <p class="update-description short">
+          <p class="news-description short">
             {{ item.content
               | markdownify
               | strip_html
@@ -31,7 +31,7 @@ title: News
           </p>
 
           <!-- full -->
-          <p class="update-description full">
+          <p class="news-description full">
             {{ item.content | markdownify }}
           </p>
 

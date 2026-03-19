@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.querySelectorAll(".toggle-btn").forEach(btn => {
   btn.addEventListener("click", () => {
-    const card = btn.closest(".update-card");
+    const card = btn.closest(".news-card");
     card.classList.toggle("expanded");
 
     btn.textContent = card.classList.contains("expanded")

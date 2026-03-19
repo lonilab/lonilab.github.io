@@ -1,3 +1,7 @@
+.news {
+  width: 100%;
+}
+
 .news-list {
   display: flex;
   flex-direction: column;
@@ -39,15 +43,15 @@
   line-height: 1.6;
 }
 
-.update-description.full {
+.news-description.full {
   display: none;
 }
 
-.update-card.expanded .update-description.short {
+.news-card.expanded .news-description.short {
   display: none;
 }
 
-.update-card.expanded .update-description.full {
+.news-card.expanded .news-description.full {
   display: block;
 }
 
