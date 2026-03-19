@@ -1,13 +1,13 @@
 .person-card {
   display: grid;
   grid-template-columns: 88px minmax(0, 1fr);
-  gap: 18px;
+  gap: 22px;
   align-items: start;
 
-  padding: 18px;
+  padding: 22px;
   border: 1px solid var(--border);
   background: var(--panel);
-  border-radius: 14px;
+  border-radius: 16px;
 }
 
 .person-photo {
@@ -17,8 +17,8 @@
 }
 
 .person-photo img {
-  width: 88px;
-  height: 88px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -26,13 +26,13 @@
 
 .person-info h3 {
   margin: 0 0 4px;
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .person-role {
   margin: 0 0 10px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--muted);
   font-weight: 500;
 }
@@ -40,7 +40,7 @@
 .person-description {
   margin: 0 0 12px;
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 .person-meta {
