@@ -21,7 +21,6 @@
 .update-item {
   display: grid;
   grid-template-columns: 100px 1fr;
-  white-space: nowrap;
   column-gap: 0px;
   align-items: baseline;
   padding: 6px 0;
@@ -35,6 +34,7 @@
 .update-date {
   margin: 0;
   font-size: 18px;
+  white-space: nowrap;
   color: var(--muted);
 }
 
