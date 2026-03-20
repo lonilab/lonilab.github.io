@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".update-card").forEach(card => {
+  document.querySelectorAll(".news-card").forEach(card => {
     const btn = card.querySelector(".toggle-btn");
 
     btn.addEventListener("click", () => {
