@@ -45,12 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".news-card").forEach(card => {
+  document.querySelectorAll(".update-card").forEach(card => {
     const btn = card.querySelector(".toggle-btn");
 
     btn.addEventListener("click", () => {
-      const expanded = card.classList.toggle("expanded");
-      btn.textContent = expanded ? "Show less" : "Show more";
+      const collapsed = card.classList.toggle("collapsed");
+
+      btn.textContent = collapsed
+        ? "Show less"   // now showing short → allow expand
+        : "Show more";  // now showing full → allow collapse
     });
   });
 });

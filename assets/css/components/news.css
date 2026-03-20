@@ -43,15 +43,19 @@
   line-height: 1.6;
 }
 
-.news-description.full {
+.update-description.short {
   display: none;
 }
 
-.news-card.expanded .news-description.short {
+.update-description.full {
+  display: block;
+}
+
+.update-card.collapsed .update-description.full {
   display: none;
 }
 
-.news-card.expanded .news-description.full {
+.update-card.collapsed .update-description.short {
   display: block;
 }
 
