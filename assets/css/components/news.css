@@ -37,25 +37,21 @@
   font-weight: 600;
 }
 
-.news-description {
-  margin: 0;
+.update-description {
   color: var(--text);
   line-height: 1.6;
+  overflow: hidden;
 }
 
-.update-description.short {
-  display: none;
+/* collapsed state */
+.update-description[data-collapsed="true"] {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;   /* number of lines */
+  -webkit-box-orient: vertical;
 }
 
-.update-description.full {
-  display: block;
-}
-
-.update-card.collapsed .update-description.full {
-  display: none;
-}
-
-.update-card.collapsed .update-description.short {
+/* expanded state */
+.update-description[data-collapsed="false"] {
   display: block;
 }
 

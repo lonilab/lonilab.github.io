@@ -20,22 +20,11 @@ title: News
         </h2>
 
         {% if item.content %}
-          <!-- truncated -->
-          <p class="news-description short">
-            {{ item.content
-              | markdownify
-              | strip_html
-              | strip_newlines
-              | truncate: 120
-            }}
-          </p>
-
-          <!-- full -->
-          <p class="news-description full">
+          <div class="news-description" data-collapsed="true">
             {{ item.content | markdownify }}
-          </p>
+          </div>
 
-          <button class="toggle-btn">See more</button>
+          <button class="toggle-btn" type="button">Show more</button>
         {% endif %}
 
       </article>
