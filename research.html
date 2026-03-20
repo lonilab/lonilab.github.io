@@ -3,13 +3,55 @@ layout: default
 title: Research
 ---
 
-<section class="hero">
-  <h1>Welcome to Our Lab</h1>
-  <p>{{ site.lab_description }}</p>
+<section class="projects-page">
 
-  <div class="tags">
-    {% for tag in site.lab_tags %}
-      <span class="tag">{{ tag }}</span>
-    {% endfor %}
-  </div>
+  <!-- Featured Projects -->
+  <section class="featured-projects">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="project-grid">
+      {% assign featured = site.projects | where: "featured", true | slice: 0, 3 %}
+      {% for project in featured %}
+        <a href="{{ project.url | relative_url }}" class="project-card">
+          <div class="project-image">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+          </div>
+          <div class="project-title">{{ project.title }}</div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+
+
+  <!-- Project List -->
+  <section class="project-list">
+    <h2 class="section-title">All Projects</h2>
+
+    {% assign projects = site.projects | sort: "date" | reverse %}
+
+    <div class="project-items">
+      {% for project in projects %}
+        <div class="project-item">
+
+          <span class="project-status {{ project.status }}">
+            {{ project.status }}
+          </span>
+
+          <div class="project-content">
+            <a href="{{ project.url | relative_url }}" class="project-name">
+              {{ project.title }}
+            </a>
+
+            {% if project.description %}
+              <p class="project-desc">
+                {{ project.description }}
+              </p>
+            {% endif %}
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
 </section>
