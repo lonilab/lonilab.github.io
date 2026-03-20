@@ -44,14 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
   renderPage(1);
 });
 
-document.querySelectorAll(".toggle-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const card = btn.closest(".news-card");
-    card.classList.toggle("expanded");
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".news-card").forEach(card => {
+    const btn = card.querySelector(".toggle-btn");
 
-    btn.textContent = card.classList.contains("expanded")
-      ? "See less"
-      : "See more";
+    btn.addEventListener("click", () => {
+      const expanded = card.classList.toggle("expanded");
+      btn.textContent = expanded ? "Show less" : "Show more";
+    });
   });
 });
 
